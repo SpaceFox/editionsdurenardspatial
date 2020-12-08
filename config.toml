@@ -1,0 +1,7 @@
+baseURL = "https://renardspatial.com/"
+languageCode = "fr-FR"
+title = "Éditions du Renard Spatial"
+theme = "renardspatial"
+
+[markup.goldmark.renderer]
+unsafe= true

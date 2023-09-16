@@ -1,96 +1,71 @@
 {{ define "main" }}
-<main>
-    <div class="tile is-ancestor">
-        <div class="tile is-parent is-4">
-            <article class="tile is-child box">
-                <img src="/img/logo.png" alt="Logo des Éditions du Renard Spatial">
-            </article>
-        </div>
-        <div class="tile is-parent is-8">
-            <article class="tile is-child box content has-background-white-bis bghome">
-                <h1>Bienvenue sur le site des Éditions du Renard Spatial !</h1>
-                <p>Nous venons de nous lancer et ce site est encore en travaux. Nous espérons tout de même que vous y
-                trouvez votre bonheur.</p>
-                <p><a href="/catalogue/">Notre premier livre est déjà disponible</a> même si ce site n’est pas encore terminé.</p>
-                <p>Bonne visite !</p>
-            </article>
-        </div>
-    </div>
-    <div class="tile is-ancestor">
-        <div class="tile is-vertical is-8">
-            <div class="tile">
-                <div class="tile is-parent">
-                    <article class="tile is-child box content has-background-white-bis">
-                        <h1>Littératures de l’imaginaire</h1>
-                        <p>Parce qu’on a toute la réalité nécessaire au pas de sa porte, nous éditons surtout des
-                            <strong>littératures de l’imaginaire</strong>, c’est-à-dire du fantastique, de la
-                            science-fiction,
-                            de la fantasy, etc.</p>
-                    </article>
-                </div>
-                <div class="tile is-parent">
-                    <article class="tile is-child box content">
-                        <h1>Une littérature accessible</h1>
-                        <p>Nous pensons que la littérature doit être accessible au plus grand nombre. C’est pourquoi
-                            nous privilégions les formats peu chers et nous efforçons de conserver des prix doux.</p>
-                        <p>Si vous aimez les versions <em>luxe</em>, vous êtes au mauvais endroit.</p>
-                    </article>
-                </div>
-            </div>
-            <div class="tile">
-                <div class="tile is-parent">
-                    <article class="tile is-child box content">
-                        <h1>Nouvelles, recueils et séries</h1>
-                        <p>Nous privilégions des formats courts et pêchus aux sagas interminables.</p>
-                        <p>Ici, vous trouverez surtout des nouvelles, indépendantes ou sous forme de recueil, ainsi que
-                            des séries.</p>
-                    </article>
-                </div>
-                <div class="tile is-parent">
-                    <article class="tile is-child box content has-background-white-bis">
-                        <h1>Une typographie soignée</h1>
-                        <p>Parce que <em>accessible</em> ne veut pas dire <em>au rabais</em>, nous soignons la mise en
-                            forme de nos textes, polices et typographie incluses. Dans la mesure du possible sur les
-                            versions
-                            électroniques, bien entendu !</p>
-                    </article>
-                </div>
-            </div>
-        </div>
-        <div class="tile is-parent is-4">
-            <article class="tile is-child box content has-background-white-ter">
-                <h1>Des textes libres</h1>
-                <p>Lire un texte, c’est se l’approprier, avoir envie de les étendre, de les partager, d’en créer des
-                    versions dérivées. Combien d’univers se sont vus étendus bien au-delà de l’imagination de leurs
-                    auteurs d’origine ?</p>
-                <p>Nous croyons en l’importance de cette appropriation par nos lectrices et lecteurs.</p>
-                <p>C’est pourquoi, sauf exception, nos textes sont sous licence <a
-                        href="https://creativecommons.org/licenses/by/4.0/deed.fr">Creative Commons – Attribution 4.0
-                    International</a>.</p>
-                <p>Ceci vous autorise à partager et adapter nos publications (notamment pour d’éventuels
-                    <em>fan-art</em> et <em>fan-fictions</em>) sans avoir à demander de permission explicite, tant que
-                    vous respectez <a href="https://creativecommons.org/licenses/by/4.0/deed.fr">les conditions
-                        indiquées</a>.</p>
-            </article>
-        </div>
-    </div>
-    <div class="tile is-ancestor">
-        <div class="tile is-parent">
-            <article class="tile is-child box content">
-                <h1>Ebooks maintenant…</h1>
-                <p>Tous nos titres sont disponibles en version électronique, sans DRM autres que ceux imposés par les
-                    libraires en ligne.</p>
-            </article>
-        </div>
-        <div class="tile is-parent">
-            <article class="tile is-child box content has-background-white-bis">
-                <h1>… papier dans le futur</h1>
-                <p>Retardés par le Covid-19, des versions « papier » de nos ouvrages sont prévues. Ce seront
-                    toutes des version « poche », au format 11 x 18 cm.</p>
-            </article>
-        </div>
-    </div>
+<div class="home-grid">
+    <article class="logo">
+        <img src="/img/logo.png" alt="Logo des Éditions du Renard Spatial">
+    </article>
+    <article class="grid-welcome bghome">
+        <h1>Bienvenue sur le site des Éditions du Renard Spatial !</h1>
+        <p>Nous venons de nous lancer et ce site est encore en travaux. Nous espérons tout de même que vous y
+            trouvez votre bonheur.</p>
+        <p><a href="/catalogue/">Notre premier livre est déjà disponible</a> même si ce site n’est pas encore
+            terminé.</p>
+        <p>Bonne visite !</p>
+    </article>
 
-    {{ partial "pagination.html" . }}
-</main>
+    <article>
+        <h1>Littératures de l’imaginaire</h1>
+        <p>Parce qu’on a toute la réalité nécessaire au pas de sa porte, nous éditons surtout des
+            <strong>littératures de l’imaginaire</strong>, c’est-à-dire du fantastique, de la science-fiction,
+            de la fantasy, etc.</p>
+    </article>
+
+    <article>
+        <h1>Une littérature accessible</h1>
+        <p>Nous pensons que la littérature doit être accessible au plus grand nombre. C’est pourquoi
+            nous privilégions les formats peu chers et nous efforçons de conserver des prix doux.</p>
+        <p>Si vous aimez les versions <em>luxe</em>, vous êtes au mauvais endroit.</p>
+    </article>
+    <article class="grid-free-texts">
+        <h1>Des textes libres</h1>
+        <p>Lire un texte, c’est se l’approprier, avoir envie de les étendre, de les partager, d’en créer des
+            versions dérivées. Combien d’univers se sont vus étendus bien au-delà de l’imagination de leurs
+            auteurs d’origine ?</p>
+        <p>Nous croyons en l’importance de cette appropriation par nos lectrices et lecteurs.</p>
+        <p>C’est pourquoi, sauf exception, nos textes sont sous licence <a
+                href="https://creativecommons.org/licenses/by/4.0/deed.fr">Creative Commons – Attribution 4.0
+            International</a>.</p>
+        <p>Ceci vous autorise à partager et adapter nos publications (notamment pour d’éventuels
+            <em>fan-art</em> et <em>fan-fictions</em>) sans avoir à demander de permission explicite, tant que
+            vous respectez <a href="https://creativecommons.org/licenses/by/4.0/deed.fr">les conditions
+                indiquées</a>.</p>
+    </article>
+
+    <article>
+        <h1>Nouvelles, recueils et séries</h1>
+        <p>Nous privilégions des formats courts et pêchus aux sagas interminables.</p>
+        <p>Ici, vous trouverez surtout des nouvelles, indépendantes ou sous forme de recueil, ainsi que
+            des séries.</p>
+    </article>
+
+    <article>
+        <h1>Une typographie soignée</h1>
+        <p>Parce que <em>accessible</em> ne veut pas dire <em>au rabais</em>, nous soignons la mise en
+            forme de nos textes, polices et typographie incluses. Dans la mesure du possible sur les
+            versions
+            électroniques, bien entendu !</p>
+    </article>
+
+    <article class="grid-half">
+        <h1>Ebooks maintenant…</h1>
+        <p>Tous nos titres sont disponibles en version électronique, sans DRM autres que ceux imposés par les
+            libraires en ligne.</p>
+    </article>
+    <article class="grid-half">
+        <h1>… papier dans le futur</h1>
+        <p>Retardés par le Covid-19, des versions « papier » de nos ouvrages sont prévues. Ce seront
+            toutes des version « poche », au format 11 x 18 cm.</p>
+    </article>
+</div>
+
+{{ partial "pagination.html" . }}
 {{ end }}

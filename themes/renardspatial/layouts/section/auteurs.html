@@ -1,32 +1,30 @@
 {{ define "main" }}
-<main>
-    {{ .Content }}
-    <div class="tile is-ancestor">
-        {{ range $i, $page := .Paginator.Pages }}
-        {{ if (and (gt $i 0) (eq (mod $i 4) 0)) }}</div><div class="tile is-ancestor">{{ end }}
+{{ .Content }}
+<div class="tile is-ancestor">
+    {{ range $i, $page := .Paginator.Pages }}
+    {{ if (and (gt $i 0) (eq (mod $i 4) 0)) }}</div><div class="tile is-ancestor">{{ end }}
 
-        <div class="tile is-parent">
-            <div class="card tile is-child">
-                <div class="card-content">
-                    <div class="media">
-                        <div class="media-left">
-                            <figure class="image is-mini-cover">
-                                <img src="{{ .Params.avatar }}" alt="Avatar de {{ .Title }}">
-                            </figure>
-                        </div>
-                        <div class="media-content">
-                            <p class="title is-4">{{ .Title }}</p>
-                            <p class="subtitle is-6"><a href="{{ .Permalink }}">Détails</a></p>
-                        </div>
+    <div class="tile is-parent">
+        <div class="card tile is-child">
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-mini-cover">
+                            <img src="{{ .Params.avatar }}" alt="Avatar de {{ .Title }}">
+                        </figure>
                     </div>
-
-                    <div class="content">{{ .Params.minibio | markdownify }}</div>
+                    <div class="media-content">
+                        <p class="title is-4">{{ .Title }}</p>
+                        <p class="subtitle is-6"><a href="{{ .Permalink }}">Détails</a></p>
+                    </div>
                 </div>
+
+                <div class="content">{{ .Params.minibio | markdownify }}</div>
             </div>
         </div>
-        {{ end }}
     </div>
+    {{ end }}
+</div>
 
-    {{ partial "pagination.html" . }}
-</main>
+{{ partial "pagination.html" . }}
 {{ end }}

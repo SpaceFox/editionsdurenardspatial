@@ -34,12 +34,12 @@ Nous préfèrerions vous proposer uniquement des livres électroniques sans DRM,
 {{< tile title="Libraires sans DRM"  back="success-light" width="3">}}
 
 - [7switch](https://www.7switch.com/fr/list/publisher-101786-editions-du-renard-spatial)
-- [Feedbooks](https://fr.feedbooks.com/store/top?lang=fr&publisher=%C3%89ditions+du+Renard+Spatial)
+- [Cantook](https://market.cantook.com/recent?publisher=%C3%89ditions+du+Renard+Spatial) _(ex-Feedbooks)_
 - [leslibraires.fr](https://www.leslibraires.fr/editeur/editions-du-renard-spatial/)
-- [leslibraires.ca](https://www.leslibraires.ca/recherche/?e=%C3%89ditions+du+Renard+Spatial&tri=plus-recents)
+- [leslibraires.ca](https://www.leslibraires.ca/editeur/10277)
 - [Le Furet du nord](https://www.furet.com/editeur/Editions+du+Renard+Spatial)
 - [Le forum du livre](https://www.librairieforumdulivre.fr/editeur/editions-du-renard-spatial/)
-- [Cultura](https://www.cultura.com/inattendu-tea-9782492575006.html)<sup>*</sup>
+- [Cultura](https://www.cultura.com/p-inattendu-3476232.html)<sup>*</sup>
 - etc.
 
 {{< /tile >}}

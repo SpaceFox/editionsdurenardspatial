@@ -1,7 +1,5 @@
-<div class="tile is-parent {{ if (.Get "width") }} is-{{ .Get "width" }}{{ end }}">
-    <article class="tile is-child box {{ if (.Get "back") }} has-background-{{ .Get "back" }}{{ end }}">
-        {{ if (.Get "title") }}<h1 class="title">{{ .Get "title" }}</h1>{{ end }}
-        {{ if (.Get "subtitle") }}<h2 class="subtitle">{{ .Get "subtitle" }}</h2>{{ end }}
-        <div class="content">{{- .Inner | markdownify -}}</div>
-    </article>
-</div>
+<article{{ if (.Get "width") }} class="w-{{ .Get "width" }}"{{ end }}>
+    {{ if (.Get "title") }}<h1 class="title">{{ .Get "title" }}</h1>{{ end }}
+    {{ if (.Get "subtitle") }}<h2 class="subtitle">{{ .Get "subtitle" }}</h2>{{ end }}
+    <div class="content">{{- .Inner | markdownify -}}</div>
+</article>

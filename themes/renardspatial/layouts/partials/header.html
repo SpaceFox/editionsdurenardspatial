@@ -1,57 +1,18 @@
-<nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="container">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="/">
-                <img src="/img/logoseul.svg">
-            </a>
-
-            <a role="button" class="navbar-burger" data-target="mainNav"  aria-label="menu" aria-expanded="false">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-
-        <div id="mainNav" class="navbar-menu">
-            <div class="navbar-start">
-                <a class="navbar-item" href="/catalogue">Catalogue</a>
-<!--                <a class="navbar-item">Formats</a>-->
-<!--                <div class="navbar-item has-dropdown is-hoverable">-->
-<!--                    <a class="navbar-link">Collections</a>-->
-<!--                    <div class="navbar-dropdown">-->
-<!--                        {{ range (where .Pages "Section" "collection") }}-->
-<!--                        <a class="navbar-item" href="{{ .Permalink }}">{{ .Title }}</a>-->
-<!--                        {{ end }}-->
-<!--                    </div>-->
-<!--                </div>-->
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">Auteurs</a>
-                    <div class="navbar-dropdown">
-                        {{ with .Site.GetPage "/auteurs" }}{{ range .Pages }}
-                        <a class="navbar-item" href="{{ .Permalink }}">{{ .Title }}</a>
-                        {{ end }}{{ end }}
-                    </div>
-                </div>
-<!--                <a class="navbar-item">Concepts</a>-->
-                <a class="navbar-item" href="/pages/contact">Contact</a>
-            </div>
-
-            <div class="navbar-end">
-                <div class="navbar-item">
-                    <div class="buttons">
-                        <a class="button is-primary" href="/pages/librairies">
-                            <strong>Acheter</strong>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<nav role="navigation" aria-label="main navigation">
+    <ul class="main-menu">
+        <li><a href="/" aria-label="Retour à l’accueil"><img src="/img/logoseul.svg"/></a></li>
+        <li><a href="/catalogue">Catalogue</a></li>
+        <li><a href="/auteurs">Auteurs</a></li>
+        <li><a href="/pages/contact">Contact</a></li>
+    </ul>
+    <ul class="buy">
+        <li><a role="button" href="/pages/librairies">Acheter</a></li>
+    </ul>
 </nav>
 
 {{ if not .IsHome }}
 <nav class="breadcrumb" aria-label="breadcrumbs">
-    <div class="container">
+    <div>
         <ul>
             {{- template "breadcrumbnav" (dict "p1" . "p2" .) -}}
         </ul>

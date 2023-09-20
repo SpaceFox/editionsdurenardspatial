@@ -1,5 +1,5 @@
 <article{{ if (.Get "width") }} class="w-{{ .Get "width" }}{{ if (.Get "back") }} {{ .Get "back" }}{{ end }}"{{ end }}>
     {{ if (.Get "title") }}<h1>{{ .Get "title" }}</h1>{{ end }}
     {{ if (.Get "subtitle") }}<h2>{{ .Get "subtitle" }}</h2>{{ end }}
-    {{- .Inner | markdownify -}}
+    <p>{{- .Inner | markdownify -}}</p>
 </article>

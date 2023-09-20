@@ -4,7 +4,6 @@ date: "2020-11-29T20:00:00+02:00"
 avatar: "/img/auteurs/spacefox.jpg"
 minibio: "Renard et spationaute, SpaceFox comble les longs voyages entre deux missions d’exploration avec la lecture, l’écriture et les poulets rôtis. Il a fait ajouter une bibliothèque à son vaisseau, qu’il s’est empressé de remplir de science-fiction et de fantastique – le tout souvent humoristique. Quand son temps libre ne lui laisse pas le temps d’écrire, il lit moult romans, bandes dessinées et mangas, qu’il critique parfois."
 ---
-{{< tile-ancestor >}}
 {{< tile title="Biographie" width="8" >}}
 Renard et spationaute, SpaceFox comble les longs voyages entre deux missions d’exploration avec la lecture, l’écriture 
 et les poulets rôtis. Il a fait ajouter une bibliothèque à son vaisseau, qu’il s’est empressé de remplir de 
@@ -16,28 +15,30 @@ d’écrire, il lit moult romans, bandes dessinées et mangas, qu’il critique 
 {{< figure src="/img/auteurs/spacefox256.png" title="SpaceFox" >}}
 
 {{< /tile >}}
-
 {{< tile title="Contact" width="4" >}}
 
-- Par courriel : <a href="mailto:&#116;&#101;&#120;&#116;&#101;&#115;&#64;&#115;&#112;&#97;&#99;&#101;&#102;&#111;&#120;&#46;&#102;&#114;">&#116;&#101;&#120;&#116;&#101;&#115;&#64;&#115;&#112;&#97;&#99;&#101;&#102;&#111;&#120;&#46;&#102;&#114;</a> ;
-- via [Twitter](https://twitter.com/Renard_spatial) ;
+- Par courriel : <a href="mailto:&#116;&#101;&#120;&#116;&#101;&#115;&#64;&#115;&#112;&#97;&#99;&#101;&#102;&#111;&#120;&#46;&#102;&#114;">&#116;&#101;&#120;&#116;&#101;&#115;&#64;&#115;&#112;&#97;&#99;&#101;&#102;&#111;&#120;&#46;&#102;&#114;</a> ;
+- Via [Mastodon](https://mastodon.spacefox.fr/@spacefox) ;
+- via [Twitter / X](https://twitter.com/Renard_spatial) ;
 - via [Facebook](https://www.facebook.com/francois.spacefox).
 - Site : https://spacefox.fr
 
 {{< /tile >}}
-{{< /tile-ancestor >}}
-
-{{< tile-ancestor >}}
-{{< tile title="Publications" >}}
-- [Inattendu](/catalogue/978-2-492575-00-6-inattendu/)
+{{< tile title="Publications" width="4">}}
+- [Inattendu](/livres/978-2-492575-00-6-inattendu/)
 {{< /tile >}}
-{{< tile title="Ailleurs…" >}}
+{{< tile title="Ailleurs…" width="8">}}
 ## Nouvelles
 
-- _[Inattendu](/écrits/inattendu/)_, Lanfeust Mag n°165, éditions Soleil Presse (2013).
+- _[Inattendu](/livres/978-2-492575-00-6-inattendu/)_, Lanfeust Mag n°165, éditions Soleil Presse (2013).
 
 ## Publications non littéraires
 
+- _[Sortie de darktable 4.0.0 : une présentation 100 % subjective](https://zestedesavoir.com/articles/4242/sortie-de-darktable-4-0-0-une-presentation-100-subjective/)_, [Zeste de Savoir](https://zestedesavoir.com) (2022).
+- _[Dates, durées et horloges en informatique](https://zestedesavoir.com/tutoriels/3843/dates-durees-et-horloges-en-informatique/)_, [Zeste de Savoir](https://zestedesavoir.com) (2021).
+- _[62 831 853 071 750 décimales de π. Et maintenant ?](https://zestedesavoir.com/articles/4016/62-831-853-071-750-decimales-de-p-et-maintenant/)_, [Zeste de Savoir](https://zestedesavoir.com) (2021).
+- _[Le pain au levain facile](https://zestedesavoir.com/tutoriels/3573/le-pain-au-levain-facile-1/)_, [Zeste de Savoir](https://zestedesavoir.com) (2021).
+- _[La compilation « Just In Time » : un exemple et des conséquences](https://zestedesavoir.com/articles/1837/la-compilation-just-in-time-un-exemple-et-des-consequences/)_, [Zeste de Savoir](https://zestedesavoir.com) (2019).
 - _[Votre appareil photo vous ment ! (mais le contraire serait bien embêtant)](https://zestedesavoir.com/articles/3218/votre-appareil-photo-vous-ment-mais-le-contraire-serait-bien-embetant/)_, [Zeste de Savoir](https://zestedesavoir.com) (2019).
 - _[Claviers français : deux nouvelles dispositions normalisées !](https://zestedesavoir.com/articles/3121/claviers-francais-deux-nouvelles-dispositions-normalisees/)_, [Zeste de Savoir](https://zestedesavoir.com) (2019).
 - _[L'internationalisation et ses pièges : créer un logiciel universel](https://zestedesavoir.com/tutoriels/3039/linternationalisation-et-ses-pieges-creer-un-logiciel-universel/)_, [Zeste de Savoir](https://zestedesavoir.com) (2019).
@@ -52,7 +53,6 @@ d’écrire, il lit moult romans, bandes dessinées et mangas, qu’il critique 
 
 ## Billets non littéraires
 
-Comme ce blog est consacré uniquement à ce qui concerne de près ou de loin la littérature, je regroupe tout le reste [sur cette page](https://zestedesavoir.com/contenus/tribunes/72/).
+Comme mon blog est consacré uniquement à ce qui concerne de près ou de loin la littérature, je regroupe tout le reste [sur cette page](https://zestedesavoir.com/contenus/tribunes/72/).
 
 {{< /tile >}}
-{{< /tile-ancestor >}}

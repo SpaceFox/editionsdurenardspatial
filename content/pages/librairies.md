@@ -1,12 +1,12 @@
 ---
 title: "Acheter"
 date: "2020-11-29T20:00:00+02:00"
+summary: "Retrouvez ici toutes les librairies où acheter nos livres !"
 ---
-{{< tile-ancestor >}}
-{{< tile title="Pas de vente directe" back="warning-light" width="4" >}}
+{{< tile title="Pas de vente directe" back="yellow" width="4" >}}
 Les Éditions du Renard Spatial ne vendent pas directement leurs ouvrages. Nous sommes éditeurs, pas libraires !
 
-Vous pouvez vous procurer nos ouvrages dans l’une des librairies listées sur cette page.
+Vous pouvez vous procurer nos livres dans l’une des librairies listées sur cette page.
 {{< /tile >}}
 {{< tile title="Librairies" width="8" >}}
 
@@ -16,9 +16,6 @@ nos livres sont normalement disponibles chez tous leurs libraires partenaires.
 Nous ne vendons pas encore de livres papier. Rendez-vous une fois la crise du Covid-19 calmée !
 
 {{< /tile >}}
-{{< /tile-ancestor >}}
-
-{{< tile-ancestor >}}
 {{< tile title="Les DRM" width="6">}}
 
 Les DRM (pour _digital rights management_, gestion des droits numériques) sont une technique qui permet en théorie de
@@ -31,7 +28,7 @@ jamais empêché le piratage d’une œuvre.
 Nous préfèrerions vous proposer uniquement des livres électroniques sans DRM, hélas certains libraires forcent leur utilisation.
 
 {{< /tile >}}
-{{< tile title="Libraires sans DRM"  back="success-light" width="3">}}
+{{< tile title="Libraires sans DRM"  back="green" width="3">}}
 
 - [7switch](https://www.7switch.com/fr/list/publisher-101786-editions-du-renard-spatial)
 - [Cantook](https://market.cantook.com/recent?publisher=%C3%89ditions+du+Renard+Spatial) _(ex-Feedbooks)_
@@ -39,6 +36,7 @@ Nous préfèrerions vous proposer uniquement des livres électroniques sans DRM,
 - [leslibraires.ca](https://www.leslibraires.ca/editeur/10277)
 - [Le Furet du nord](https://www.furet.com/editeur/Editions+du+Renard+Spatial)
 - [Le forum du livre](https://www.librairieforumdulivre.fr/editeur/editions-du-renard-spatial/)
+- [vivlio](https://shop.vivlio.com/product/9782492575006_9782492575006_2/inattendu)<sup>*</sup>
 - [Cultura](https://www.cultura.com/p-inattendu-3476232.html)<sup>*</sup>
 - etc.
 
@@ -53,14 +51,11 @@ Nous préfèrerions vous proposer uniquement des livres électroniques sans DRM,
 - etc.
 
 {{< /tile >}}
-{{< /tile-ancestor >}}
-{{< tile-ancestor >}}
-{{< tile title="Et aussi…" width="9">}}
-Nous sommes aussi référencés chez [diliCOM](https://dilicom-prod.centprod.com/index.html), [Cyberlibris](https://www.cyberlibris.com/), 
+{{< tilesingleline title="Et aussi…" width="9">}}
+Nous sommes aussi référencés chez [dilicom](https://dilicom-prod.centprod.com/index.html), [Cyberlibris](https://www.cyberlibris.com/), 
 [Youboox](https://youboox.fr/fr) et [Youscribe streaming](https://www.youscribe.com/editions-du-renard-spatial/).
-{{< /tile >}}
+{{< /tilesingleline >}}
 
-{{< tile width="3" >}}
+{{< tilesingleline width="3" >}}
 _<sup>*</sup>Librairie sans page éditeur : cherchez-y directement nos titres !_
-{{< /tile >}}
-{{< /tile-ancestor >}}
+{{< /tilesingleline >}}

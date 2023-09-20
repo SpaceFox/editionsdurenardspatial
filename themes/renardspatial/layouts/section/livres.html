@@ -1,0 +1,24 @@
+{{ define "main" }}
+{{ .Content }}
+<main class="livres">
+    <h1>Nos livres</h1>
+    {{ range $i, $page := .Paginator.Pages }}
+    <article class="w-6">
+        <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+        <figure class="image is-mini-cover">
+            <img src="{{ .Params.cover }}" alt="Couverture de {{ .Title }}">
+        </figure>
+        <h2>{{ .Params.type }} de {{ .Params.genre }} par <a href="{{ .Params.authorurl }}">{{ .Params.author }}</a>
+        </h2>
+        <p>Publié le : {{ .Params.publishdate.Format "01/02/2006" }}</p>
+        {{ if isset .Params "ebookisbn" }}
+        <p>Version électronique :<br/>
+            Prix : {{ .Params.ebookprice }}<br/>
+            ISBN : {{ .Params.ebookisbn }}</p>
+        {{ end }}
+        <p>{{ .Params.backcover | markdownify }}</p>
+    </article>
+    {{ end }}
+    {{ partial "pagination.html" . }}
+</main>
+{{ end }}

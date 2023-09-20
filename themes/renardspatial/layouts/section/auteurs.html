@@ -1,30 +1,17 @@
 {{ define "main" }}
-{{ .Content }}
-<div class="tile is-ancestor">
+<main class="auteurs">
+    <h1>Nos auteurs</h1>
+    {{ .Content }}
     {{ range $i, $page := .Paginator.Pages }}
-    {{ if (and (gt $i 0) (eq (mod $i 4) 0)) }}</div><div class="tile is-ancestor">{{ end }}
+    <article class="w-6">
+        <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+        <figure>
+            <img src="{{ .Params.avatar }}" alt="Avatar de {{ .Title }}">
+        </figure>
 
-    <div class="tile is-parent">
-        <div class="card tile is-child">
-            <div class="card-content">
-                <div class="media">
-                    <div class="media-left">
-                        <figure class="image is-mini-cover">
-                            <img src="{{ .Params.avatar }}" alt="Avatar de {{ .Title }}">
-                        </figure>
-                    </div>
-                    <div class="media-content">
-                        <p class="title is-4">{{ .Title }}</p>
-                        <p class="subtitle is-6"><a href="{{ .Permalink }}">Détails</a></p>
-                    </div>
-                </div>
-
-                <div class="content">{{ .Params.minibio | markdownify }}</div>
-            </div>
-        </div>
-    </div>
+        <p>{{ .Params.minibio | markdownify }}</p>
+    </article>
     {{ end }}
-</div>
-
-{{ partial "pagination.html" . }}
+    {{ partial "pagination.html" . }}
+</main>
 {{ end }}

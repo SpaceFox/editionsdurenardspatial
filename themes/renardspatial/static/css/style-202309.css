@@ -1,8 +1,74 @@
+/* sanchez-regular - latin_latin-ext */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Sanchez';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/sanchez-v15-latin_latin-ext-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* sanchez-italic - latin_latin-ext */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Sanchez';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/sanchez-v15-latin_latin-ext-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* josefin-slab-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Josefin Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/josefin-slab-v26-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* josefin-slab-italic - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Josefin Slab';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/josefin-slab-v26-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* josefin-slab-600 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Josefin Slab';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/josefin-slab-v26-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* josefin-slab-600italic - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Josefin Slab';
+    font-style: italic;
+    font-weight: 600;
+    src: url('../fonts/josefin-slab-v26-latin-600italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 :root {
     --spacing: 1rem;
     --font-size: 1rem;
     --footer-spacing: 0.5rem;
     --footer-font-size: 0.8rem;
+    --text-color: #4a4a4a;
+    --a-color: #101010;
+    --a-hover-color: #3273dc;
+    --base-color-l: 0.931;
+    --base-color-c: 0.002;
+    --base-color-h: 60deg;
+    --light: 1.1;
+    --dark: 0.9;
+    --darker: 0.8;
+    --red-base: 0deg;
+    --yellow-base: 90deg;
+    --green-base: 130deg;
+    --base-color: oklch(var(--base-color-l) var(--base-color-c) var(--base-color-h));
+    --base-color-light: oklch(calc(var(--base-color-l) * var(--light)) var(--base-color-c) var(--base-color-h));
+    --base-color-dark: oklch(calc(var(--base-color-l) * var(--dark)) var(--base-color-c) var(--base-color-h));
+    --base-color-darker: oklch(calc(var(--base-color-l) * var(--darker)) var(--base-color-c) var(--base-color-h));
+    --background-color: oklch(var(--base-color-l) var(--base-color-c) calc(var(--base-color-h) + 180deg));
 }
 
 * {
@@ -17,8 +83,8 @@ html {
     text-rendering: optimizeLegibility;
     -webkit-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
-    background-color: rgb(220, 221, 222);
-    color: #4a4a4a;
+    background-color: var(--background-color);
+    color: var(--text-color);
     hyphens: auto;
 }
 
@@ -39,20 +105,46 @@ nav ul {
     justify-self: start;
     align-items: stretch;
 }
-nav ul.main-menu li a img {
+
+nav.permanent ul.main-menu li a img {
     height: calc(var(--font-size) * 2);
     width: calc(var(--font-size) * 2);
 }
-nav ul.main-menu li:first-child a {
+
+nav.permanent ul.main-menu li:first-child a {
     padding: calc(var(--font-size) / 2) 0 0 calc(var(--font-size) / 2);
 }
-nav ul li {
+
+nav.permanent ul li {
     display: block;
     padding: var(--spacing);
 }
-nav ul li a {
+
+nav.permanent ul li a {
     display: block;
     padding: calc(var(--spacing) * 0.75);
+}
+
+nav.breadcrumb ul li {
+    padding: 0;
+}
+
+nav.breadcrumb ul li:first-child {
+    padding-right: calc(var(--spacing) * 0.5);
+}
+
+nav.breadcrumb ul li a {
+    padding: 0 calc(var(--spacing) * 0.5);
+}
+
+main {
+    display: grid;
+    gap: var(--font-size);
+}
+
+main > p {
+    /* Ugly hack: Hugo generates parasitic <p></p> at root in <main> and I don’t know how to remove them so hide them */
+    display: none;
 }
 
 h1, h2 {
@@ -62,10 +154,39 @@ h1, h2 {
 }
 
 h1 {
-    font-size: calc(var(--font-size) * 2);
     font-weight: bold;
     text-align: center;
+}
+
+main h1 {
+    font-size: calc(var(--font-size) * 2.5);
+}
+
+article h1 {
+    font-size: calc(var(--font-size) * 2);
     padding: 0.75rem var(--spacing) 0.25rem var(--spacing);
+}
+
+main.auteurs figure {
+    float: right;
+    margin: 0;
+}
+
+main.auteurs figure img {
+    width: calc(8 * var(--spacing));
+}
+
+main.livres figure {
+    float: left;
+    margin: 0;
+}
+
+
+main.livres figure img {
+    width: calc(8 * var(--spacing));
+}
+main.livres article p:last-of-type {
+    clear: both;
 }
 
 p {
@@ -75,17 +196,57 @@ p {
 }
 
 a {
-    color: #101010;
+    color: var(--a-color);
     text-decoration: none;
 }
 
 a:hover {
-    color: #3273dc;
+    color: var(--a-hover-color);
 }
 
 article {
-    background: radial-gradient(circle at 40% 40%, rgb(255, 255, 255) 0%, rgb(232, 231, 230) 100%);
-    border: 1px solid rgb(192, 191, 190);
+    background: radial-gradient(circle at 40% 40%, var(--base-color-light) 0%, var(--base-color) 100%);
+    border: 1px solid var(--base-color-darker);
+}
+
+article h1 {
+    border-bottom: 1px solid var(--base-color-darker);
+    background: radial-gradient(circle at 33% 50%, var(--base-color), var(--base-color-dark) 100%);
+}
+
+article img {
+    padding: var(--spacing);
+    max-width: calc(100% - (2 * var(--spacing)));
+}
+
+article.red {
+    background: radial-gradient(circle at 40% 40%, oklch(calc(var(--base-color-l) * var(--light)) calc(var(--base-color-c) * 10) var(--red-base)) 0%, oklch(var(--base-color-l) calc(var(--base-color-c) * 10) var(--red-base)) 100%);
+    border: 1px solid oklch(calc(var(--base-color-l) * var(--darker)) calc(var(--base-color-c) * 10) var(--red-base));
+}
+
+article.red h1 {
+    border-bottom: 1px solid oklch(calc(var(--base-color-l) * var(--darker)) calc(var(--base-color-c) * 10) var(--red-base));
+    background: radial-gradient(circle at 33% 50%, oklch(var(--base-color-l) calc(var(--base-color-c) * 10) var(--red-base)), oklch(calc(var(--base-color-l) * var(--dark)) calc(var(--base-color-c) * 10) var(--red-base)) 100%);
+}
+
+article.yellow {
+    background: radial-gradient(circle at 40% 40%, oklch(calc(var(--base-color-l) * var(--light)) calc(var(--base-color-c) * 10) var(--yellow-base)) 0%, oklch(var(--base-color-l) calc(var(--base-color-c) * 10) var(--yellow-base)) 100%);
+    border: 1px solid oklch(calc(var(--base-color-l) * var(--darker)) calc(var(--base-color-c) * 10) var(--yellow-base));
+}
+
+article.yellow h1 {
+    border-bottom: 1px solid oklch(calc(var(--base-color-l) * var(--darker)) calc(var(--base-color-c) * 10) var(--yellow-base));
+    background: radial-gradient(circle at 33% 50%, oklch(var(--base-color-l) calc(var(--base-color-c) * 10) var(--yellow-base)), oklch(calc(var(--base-color-l) * var(--dark)) calc(var(--base-color-c) * 10) var(--yellow-base)) 100%);
+}
+
+article.green {
+    background: radial-gradient(circle at 40% 40%, oklch(calc(var(--base-color-l) * var(--light)) calc(var(--base-color-c) * 10) var(--green-base)) 0%, oklch(var(--base-color-l) calc(var(--base-color-c) * 10) var(--green-base)) 100%);
+    border: 1px solid oklch(calc(var(--base-color-l) * var(--darker)) calc(var(--base-color-c) * 10) var(--green-base));
+}
+
+article.green h1 {
+    border-bottom: 1px solid oklch(calc(var(--base-color-l) * var(--darker)) calc(var(--base-color-c) * 10) var(--green-base));
+    background: radial-gradient(circle at 33% 50%, oklch(var(--base-color-l) calc(var(--base-color-c) * 10) var(--green-base)), oklch(calc(var(--base-color-l) * var(--dark)) calc(var(--base-color-c) * 10) var(--green-base)) 100%);
 }
 
 article p:last-of-type {
@@ -103,17 +264,8 @@ article.logo img {
     max-width: calc(100% - (2 * var(--spacing)));
 }
 
-article h1 {
-    border-bottom: 1px solid rgb(192, 191, 190);
-    background: radial-gradient(circle at 33% 50%, rgb(232, 231, 230), rgb(212, 211, 210) 100%);
-}
-
 article.bghome {
-    background: radial-gradient(circle at 40% 40%, rgb(255, 255, 255) 0%, rgb(242, 241, 240) 100%);
-}
-
-article.bghome h1 {
-    background: radial-gradient(circle at 33% 50%, rgb(242, 241, 240), rgb(232, 231, 230) 100%);
+    filter: brightness(1.1);
 }
 
 a[role=button] {
@@ -126,9 +278,18 @@ a[role=button] {
 }
 
 a[role=button]:hover {
-    background: linear-gradient(-45deg, #def 1%, #e0f0ff 1%, #e0f0ff 49%, #def 49%, #cdf 51%, #e0f0ff 51%, #e0f0ff 99%, #def 99%);
-    border: 1px solid #cdf;
-    background-size: 5px 5px;
+    filter: brightness(1.05);
+}
+
+.breadcrumb li + li::before {
+    color: var(--base-color-darker);
+    content: "\0002f";
+}
+
+.hiddenlink a {
+    color: var(--text-color);
+    cursor: default;
+    pointer-events: none;
 }
 
 footer {
@@ -137,28 +298,22 @@ footer {
     text-align: center;
     margin-top: var(--spacing);
 }
+
 footer p {
     padding: var(--footer-spacing) var(--footer-spacing) 0 var(--footer-spacing);
 }
 
 @media screen and (max-width: 50em) {
-    .home-grid {
-        display: grid;
+    main {
         grid-template-columns: repeat(1, 1fr);
-        gap: var(--font-size);
-        grid-auto-rows: minmax(100px, auto);
     }
 }
 
 @media screen and (min-width: 50em), print {
 
     nav {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: 5fr 1fr;
         gap: calc(var(--font-size) * 1.5);
-    }
-
-    nav ul.main-menu {
-        grid-column: 1 / 5;
     }
 
     nav ul.main-menu li {
@@ -178,31 +333,56 @@ footer p {
         gap: calc(var(--footer-font-size) * 1.5);
     }
 
-    .home-grid {
-        display: grid;
+    main {
         grid-template-columns: repeat(12, 1fr);
-        gap: calc(var(--font-size) * 1.5);
-        grid-auto-rows: minmax(100px, auto);
     }
 
-    .grid--2-4 {
-        grid-column: 2 / 4;
+    main h1 {
+        grid-column: 1 / 13;
     }
 
-    .home-grid article {
+    main article.w-3 {
+        grid-column-start: span 3;
+    }
+
+    main article.w-4 {
         grid-column-start: span 4;
     }
 
-    .home-grid article.grid-welcome {
+    main article.w-5 {
+        grid-column-start: span 5;
+    }
+
+    main article.w-6 {
+        grid-column-start: span 6;
+    }
+
+    main article.w-8 {
+        grid-column-start: span 8;
+    }
+
+    main article.w-9 {
+        grid-column-start: span 9;
+    }
+
+    main article.w-12 {
+        grid-column-start: span 12;
+    }
+
+    main.home article {
+        grid-column-start: span 4;
+    }
+
+    main.home article.grid-welcome {
         grid-column: 5 / 13;
     }
 
-    .home-grid article.grid-free-texts {
+    main.home article.grid-free-texts {
         grid-column: 9 / 13;
         grid-row: 2 / 4;
     }
 
-    .home-grid article.grid-half {
+    main.home article.grid-half {
         grid-column-start: span 6;
     }
 }

@@ -1,16 +1,13 @@
 ---
 title: "Nous contacter"
 date: "2020-11-29T20:00:00+02:00"
+summary: "Comment nous contacter ?"
 ---
-{{< tile-ancestor >}}
-{{< tile title="J’ai un problème avec un de mes ouvrages" back="danger-light" >}}
+{{< tilesingleline title="J’ai un problème avec un de mes ouvrages" back="red" width="12" >}}
 Comme nous ne vendons pas directement, nous ne pouvons pas gérer ces problème.
 Vous devez vous rapprocher des services dédiés de la librairie (physique ou en ligne) qui vous a vendu l’ouvrage.
-{{< /tile >}}
-{{< /tile-ancestor >}}
-
-{{< tile-ancestor >}}
-{{< tile title="Soumissions de textes" back="warning-light" width="8" >}}
+{{< /tilesingleline >}}
+{{< tile title="Soumissions de textes" back="yellow" width="8" >}}
 
 **Les soumissions de textes sont fermées**.
 
@@ -25,7 +22,7 @@ Nous ouvrirons les soumissions une fois que nos processus seront rôdés et que 
 peut se faire dans le respect des auteurs qui nous contacteraient.
 
 {{< /tile >}}
-{{< tile title="Et si je veux quand même vous soumettre un texte ?" >}}
+{{< tile title="Et si je veux quand même vous soumettre un texte ?" width="4" >}}
 
 Ne le faites pas, vraiment.
 
@@ -37,10 +34,7 @@ le moindre centime.
 Vous êtes prévenus.
 
 {{< /tile >}}
-{{< /tile-ancestor >}}
-
-{{< tile-ancestor >}}
-{{< tile title="Courrier électronique" >}}
+{{< tile title="Courrier électronique" width="6" >}}
 
 Le moyen le plus simple de nous contacter est de nous envoyer un courrier électronique à 
 [&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#114;&#101;&#110;&#97;&#114;&#100;&#115;&#112;&#97;&#116;&#105;&#97;&#108;&#46;&#99;&#111;&#109;](mailto:&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#114;&#101;&#110;&#97;&#114;&#100;&#115;&#112;&#97;&#116;&#105;&#97;&#108;&#46;&#99;&#111;&#109;).
@@ -48,11 +42,9 @@ Le moyen le plus simple de nous contacter est de nous envoyer un courrier élect
 Nous nous efforçons d’y répondre dans les meilleurs délais. N’hésitez pas à nous relancer si vous n’avez pas de réponse après une semaine.
 
 {{< /tile >}}
-
-{{< tile title="Réseaux Sociaux" >}}
+{{< tilesingleline title="Réseaux Sociaux" width="6" >}}
 
 Pour l’instant, nous n’avons [qu’une page Facebook](https://www.facebook.com/%C3%89ditions-du-Renard-Spatial-102361015047522) 
 et [un compte Twitter](https://twitter.com/EditionRSpatial).
 
-{{< /tile >}}
-{{< /tile-ancestor >}}
+{{< /tilesingleline >}}

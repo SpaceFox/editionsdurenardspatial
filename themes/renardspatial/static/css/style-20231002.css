@@ -195,6 +195,19 @@ p {
     line-height: 1.5;
 }
 
+p:last-of-type {
+    padding-bottom: var(--spacing);
+}
+
+ol, ul {
+    padding: var(--spacing) var(--spacing) 0 calc(var(--spacing) * 2);
+    margin: 0;
+    line-height: 1.5;
+}
+ol:last-of-type, ul:last-of-type {
+    padding-bottom: var(--spacing);
+}
+
 a {
     color: var(--a-color);
     text-decoration: none;
@@ -247,10 +260,6 @@ article.green {
 article.green h1 {
     border-bottom: 1px solid oklch(calc(var(--base-color-l) * var(--darker)) calc(var(--base-color-c) * 10) var(--green-base));
     background: radial-gradient(circle at 33% 50%, oklch(var(--base-color-l) calc(var(--base-color-c) * 10) var(--green-base)), oklch(calc(var(--base-color-l) * var(--dark)) calc(var(--base-color-c) * 10) var(--green-base)) 100%);
-}
-
-article p:last-of-type {
-    padding-bottom: var(--spacing);
 }
 
 article.logo {
@@ -355,6 +364,10 @@ footer p {
 
     main article.w-6 {
         grid-column-start: span 6;
+    }
+
+    main article.w-7 {
+        grid-column-start: span 7;
     }
 
     main article.w-8 {

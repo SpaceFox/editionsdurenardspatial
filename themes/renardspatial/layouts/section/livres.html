@@ -14,11 +14,26 @@
         {{ if isset .Params "ebookisbn" }}
         <p>Version électronique :<br/>
             Prix : {{ .Params.ebookprice }}<br/>
-            ISBN : {{ .Params.ebookisbn }}</p>
+            ISBN : {{ .Params.ebookisbn }}<br/>
+            EAN : {{ .Params.ebookean }}</p>
         {{ end }}
         <p>{{ .Params.backcover | markdownify }}</p>
     </article>
     {{ end }}
     {{ partial "pagination.html" . }}
+    <article class="w-12">
+        <h1>À propos des prix…</h1>
+        <p>Tous les prix de nos livres ont des montants « psychologiques » avec un nombre ridicule de centimes.</p>
+        <p>Ça n’est pas un choix de notre part. Nous aurions préféré fixer des prix ronds, plus faciles à retenir, et
+            qui ne prennent pas les clients pour des imbéciles.</p>
+        <p>Seulement voilà : nous sommes présents sur l’Apple Store, et Apple interdit aux utilisateurs de ses services
+            de fixer librement leurs prix. Ceux-ci sont définis obligatoirement selon <em>une grille tarifaire</em> que
+            vous pouvez <a
+                    href="https://developer.apple.com/support/downloads/price-tier-updates/App-Store-Price-Tier-Updates-October-2022.pdf">consulter
+                ici</a> (page 10 pour les prix en euros). Et comme vous pouvez le constater, c’est elle qui impose ces
+            prix stupides.</p>
+        <p>Une autre possibilité aurait été de se priver de l’Apple Store, mais elle nécessiterait des négociations et
+            réglages avec le distributeur…</p>
+    </article>
 </main>
 {{ end }}

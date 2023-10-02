@@ -5,8 +5,32 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <title>Éditions du Renard Spatial</title>
-    <link rel="stylesheet" href="/css/style-202309.css">
+    <meta name="msapplication-TileColor" content="oklch(0.931 0.002 240)">
+    <meta name="theme-color" content="oklch(0.931 0.002 240)">
+    <title>Éditions du Renard Spatial{{ if (ne .Title "") }} — {{ .Title }}{{ end }}</title>
+    <link rel="stylesheet" href="/css/style-20231002.css">
+
+    <meta property="og:title" content="{{ if (eq .Title "") }}Éditions du Renard Spatial{{ else }}{{ .Title }}{{ end }}">
+    <meta property="og:type" content="article" />
+    {{ if isset .Params "cover" }}
+    <meta property="og:image" content="https://renardspatial.com{{ .Params.cover }}">
+    <meta name="twitter:image:alt" content="Couverture du livre « {{ .Title }} »">
+    {{ else if isset .Params "avatar" }}
+    <meta property="og:image" content="https://renardspatial.com{{ .Params.avatar }}">
+    <meta name="twitter:image:alt" content="Avatar de l’auteur « {{ .Title }} »">
+    {{ else if .IsHome }}
+    <meta property="og:image" content="https://renardspatial.com/img/logo.svg">
+    <meta name="twitter:image:alt" content="Logo des Éditions du Renard Spatial">
+    {{ end }}
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta name="twitter:card" content="summary">
+    {{ if isset .Params "backcover" }}
+    <meta property="og:description" content="{{ .Params.backcover }}">
+    {{ else if isset .Params "minibio" }}
+    <meta property="og:description" content="{{ .Params.minibio }}">
+    {{ else if .IsHome }}
+    <meta property="og:description" content="Les Éditions du Renard Spatial : les littérature de l’imaginaire, accessibles à toutes et à tous !">
+    {{ end }}
+    <meta property="og:site_name" content="Éditions du Renard Spatial.">
+    <meta name="twitter:site" content="@EditionRSpatial">
 </head>

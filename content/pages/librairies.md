@@ -45,7 +45,7 @@ Nous préfèrerions vous proposer uniquement des livres électroniques sans DRM,
 
 - [La FNAC](https://www.fnac.com/e546913/Editions-du-Renard-Spatial)
 - [Kobo / Rakuten](https://www.kobo.com/fr/fr/search?query=%C3%89ditions%20du%20Renard%20Spatial&fcsearchfield=Imprint)
-- [Amazon France](https://www.amazon.fr/s?k=%C3%89ditions+du+Renard+Spatial)<sup>*</sup>
+- [Kindle / Amazon France](https://www.amazon.fr/s?k=%C3%89ditions+du+Renard+Spatial)<sup>*</sup>
 - [Google Play Books](https://play.google.com/store/books/details?id=ozMNEAAAQBAJ)<sup>*</sup>
 - [Apple Books](https://books.apple.com/fr/book/inattendu/id1543691795?l=fr)<sup>*</sup>
 - etc.

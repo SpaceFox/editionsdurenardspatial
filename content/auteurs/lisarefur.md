@@ -32,5 +32,5 @@ l’idée de faire comprendre cette sublitité aux francophones.
 
 {{< /tile >}}
 {{< tilesingleline title="Publications" width="12" >}}
-_Cette section est encore vide, mais ça ne saurait tarder !_
+- [Ça ne peut pas être pire qu’ici](/livres/978-2-492575-01-3-ca-ne-peut-pas-etre-pire-qu-ici/)
 {{< /tilesingleline >}}

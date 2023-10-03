@@ -8,7 +8,7 @@ ebookprice: "2,99 €"
 author: "Lisa Refur"
 authorurl: "/auteurs/lisarefur"
 cover: "/img/livres/978-2-492575-01-3-ca-ne-peut-pas-etre-pire-qu-ici.png"
-backcover: "Cette ligne de chemin de fer apparue par magie agit comme un déclencheur dans l’esprit des adolescents désœuvrés. Et s’il existait un monde au-delà de cette ville de banlieue décrépite ? Qu’est-ce qui interdit aux quatre amis de quitter Villeneuve ? Rien, en fait. C’est le début de l’aventure pour Ajax, Dro, Biénale et Zef ; l’abandon d’une cité cité sans avenir, la quête d’une vie meilleure. Mais pour aller où ? Suivre la ligne ? D’où vient-elle, et où va-t-elle ? Est-ce mieux ailleurs ?"
+backcover: "Cette ligne de chemin de fer apparue par magie agit comme un déclencheur dans l’esprit des adolescents désœuvrés. Et s’il existait un monde au-delà de cette ville de banlieue décrépie ? Qu’est-ce qui interdit aux quatre amis de quitter Villeneuve ? Rien, en fait. C’est le début de l’aventure pour Ajax, Dro, Biénale et Zef ; l’abandon d’une cité cité sans avenir, la quête d’une vie meilleure. Mais pour aller où ? Suivre la ligne ? D’où vient-elle, et où va-t-elle ? Est-ce mieux ailleurs ?"
 type: "Une novella"
 genre: "fantasy"
 ---
@@ -17,10 +17,12 @@ genre: "fantasy"
 ![](/img/livres/978-2-492575-01-3-ca-ne-peut-pas-etre-pire-qu-ici.png)
 {{< /tile >}}
 {{< tile title="Ça ne peut pas être pire qu’ici" width="6" >}}
-## Une nouvelle de fantasy par [Lisa Refur](/auteurs/lisarefur)
-Cette ligne de chemin de fer apparue par magie agit comme un déclencheur dans l’esprit des adolescents désœuvrés. Et s’il existait un monde au-delà de cette ville de banlieue décrépite ? Qu’est-ce qui interdit aux quatre amis de quitter Villeneuve ? Rien, en fait. C’est le début de l’aventure pour Ajax, Dro, Biénale et Zef ; l’abandon d’une cité cité sans avenir, la quête d’une vie meilleure. Mais pour aller où ? Suivre la ligne ? D’où vient-elle, et où va-t-elle ? Est-ce mieux ailleurs ?
+## Une novella de fantasy par [Lisa Refur](/auteurs/lisarefur)
+Cette ligne de chemin de fer apparue par magie agit comme un déclencheur dans l’esprit des adolescents désœuvrés. Et s’il existait un monde au-delà de cette ville de banlieue décrépie ? Qu’est-ce qui interdit aux quatre amis de quitter Villeneuve ? Rien, en fait. C’est le début de l’aventure pour Ajax, Dro, Biénale et Zef ; l’abandon d’une cité cité sans avenir, la quête d’une vie meilleure. Mais pour aller où ? Suivre la ligne ? D’où vient-elle, et où va-t-elle ? Est-ce mieux ailleurs ?
 
 La seule solution qu’ont les jeunes gens pour le découvrir : prendre la route, se confronter à ses difficultés, ses joies et ses peines, dans l’espoir que la destination soit bonne.
+
+_Une « novella » est un texte à la longueur intermédiaire entre une grosse nouvelle et un roman court, d’environ une centaine de pages. C’est un format historiquement peu publié, car sa longueur le rend complexe à imprimer en livre (trop fin) ou à intégrer dans un recueil de nouvelles (trop long). Le terme « novella » vaut ce qu’il vaut, mais il a le mérite d’éclaircir la réalité du texte._
 {{< /tile >}}
 {{< tile title="Informations" width="3">}}
 Édition numérique
@@ -52,6 +54,6 @@ Nous préfèrerions vous proposer uniquement des livres électroniques sans DRM,
 - [La FNAC](https://www.fnac.com/livre-numerique/a18704415/Lisa-Refur-Ca-ne-peut-pas-etre-pire-qu-ici)
 - [Kobo / Rakuten](https://www.kobo.com/fr/fr/ebook/ca-ne-peut-pas-etre-pire-qu-ici)
 - [Kindle / Amazon](https://www.amazon.fr/dp/B0CK6R9LH7)
-- Google Play Livres _[Pas encore disponible]_
-- Apple Books _[Pas encore disponible]_
+- [Google Play Livres](https://play.google.com/store/books/details?id=ElfaEAAAQBAJ)
+- [Apple Books](https://books.apple.com/fr/book/%C3%A7a-ne-peut-pas-%C3%AAtre-pire-quici/id6468369291)
 {{< /tile >}}
